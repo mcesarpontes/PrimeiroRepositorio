@@ -1,0 +1,22 @@
+package br.com.alura.a1;
+
+public class TesteDeImpostos {
+
+	public static void main(String[] args) {
+
+		Imposto icms = new ICMS();
+		Imposto iss = new ISS();
+		Imposto icc = new ICCC();
+
+		Orcamento orcamento = new Orcamento(10000.0);
+
+		CalculadorDeImpostos calcula = new CalculadorDeImpostos();
+
+		//"calcula" resolve em tempo de execução pelo objeto que está sendo
+		// referenciado
+		calcula.realizaCalculo(orcamento, icms);//vai chamar o calcula do ICMS
+		calcula.realizaCalculo(orcamento, iss);//vai chamar o calcula do ISS
+		calcula.realizaCalculo(orcamento, icc);//vai chamar o calcula do ICC
+
+	}
+}
