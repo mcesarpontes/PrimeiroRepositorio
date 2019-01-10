@@ -4,9 +4,19 @@ public class TesteDeImpostos {
 
 	public static void main(String[] args) {
 
+*****************Alteração para teste do GITHUB************************ 
+*****************Teste Interface Imposto GITHUB************************
+
 		Imposto icms = new ICMS();
 		Imposto iss = new ISS();
 		Imposto icc = new ICCC();
+
+*****************Alteração para teste do GITHUB************************ 
+
+                Imposto irf = new IRF();
+                Imposto itr = new ITR(); 
+
+*****************Alteração para teste do GITHUB************************ 
 
 		Orcamento orcamento = new Orcamento(10000.0);
 
